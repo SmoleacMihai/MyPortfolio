@@ -38,6 +38,10 @@ body{
     font-weight: 600;
 }
 
+.navbar .logo a span{
+    color: #FFB800;
+}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -58,4 +62,33 @@ body{
 
 .home{
     display: flex;
+    background: url(../images/background.jpg) no-repeat center;
+    height: 100vh;
+    color: #1B1B1B;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-hello{
+    font-size: 27px;
+}
+
+.home .home-content .text-name{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-can{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-can span{
+    color: #FFB800;
+    font-weight: 500;
 }
