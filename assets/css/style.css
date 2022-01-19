@@ -16,6 +16,7 @@ body{
     margin: auto;
 }   
 
+
 /*Navbar*/
 
 .navbar{
@@ -51,4 +52,10 @@ body{
 
 .navbar .menu li:hover a{
     color: #FFB800;
+}
+
+/*Home section*/
+
+.home{
+    display: flex;
 }
