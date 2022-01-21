@@ -141,7 +141,12 @@ body{
 }
 
 /* responsive media querry */
-
+@media(max-width:1230px){
+    .home{
+        background-image: none;
+        background-color: #FBFBFB;
+    }
+}
 @media(max-width:948px){
     .max-width{
         padding: 0 50px;
