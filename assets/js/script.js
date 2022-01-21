@@ -5,16 +5,15 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky")
         }
-        if(this.scrollY < 20){
-            $('#menu-btn').css({'color':'black'})
-        }
     });
-    
     // toggle menu navbar script
     $('.menuBtn').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('#menu-btn').click(function(){
-            $(this).css({'color':'white'})
-        });
+        let act = $('.menu').hasClass("active");
+        if(act){
+            $('#menu-btn').css({'color':'white'})
+        }else{
+            $('#menu-btn').css({'color':'black'})
+        }
     });
 })
