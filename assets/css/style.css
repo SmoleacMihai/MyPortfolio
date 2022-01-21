@@ -29,6 +29,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     padding: 30px 0;
     transition: all .3s ease;
+    z-index: 999;
 }
 
 .navbar.sticky{
@@ -166,9 +167,11 @@ section{
 .about{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
+    color: #FBFBFB;
 }
 
 .about .titleAbout{
+    position: relative;
     color: #FBFBFB;
     text-align: center;
     font-size: 40px;
@@ -178,11 +181,69 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
+.about .titleAbout::after{
+    content: "who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #FFB800;
+    transform: translateX(-50%);
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
 .about .about-content .left img{
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: #FFB800;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: #FFB800;
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #FFB800;
+    transition: all .3s ease
+}
+
+.about .about-content .right a:hover{
+    color:#FFB800;
+    background: none;
+}
+
 
 /* responsive media querry */
 @media(max-width:1230px){
