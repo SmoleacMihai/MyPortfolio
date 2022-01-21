@@ -1,20 +1,21 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
-            $('.navbar').addClass("sticky") 
+            $('.navbar').addClass("sticky")
         }else{
             $('.navbar').removeClass("sticky")
         }
-        if(this.scrollY < 20){
-            $('#menu-btn').css({'color':'black'})
-        }
+        
     });
-    
     // toggle menu navbar script
     $('.menuBtn').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('#menu-btn').click(function(){
-            $(this).css({'color':'white'})
-        });
+        $('.menuBtn i').toggleClass("active");
+        let act = $('.menu').hasClass("active");
+        if(act){
+            $('#menu-btn').css({'color':'#FBFBFB'})
+        }else{
+            $('#menu-btn').css({'color':'#1B1B1B'})
+        }
     });
 })
