@@ -10,6 +10,7 @@ $(document).ready(function(){
     // toggle menu navbar script
     $('.menuBtn').click(function(){
         $('.navbar .menu').toggleClass("active");
+        $('.menuBtn i').toggleClass("active");
         let act = $('.menu').hasClass("active");
         if(act){
             $('#menu-btn').css({'color':'#FBFBFB'})

@@ -147,7 +147,7 @@ body{
         background-color: #FBFBFB;
     }
 }
-@media(max-width:948px){
+@media(max-width:947px){
     .max-width{
         padding: 0 50px;
     }  
@@ -156,7 +156,9 @@ body{
         display: block;
         z-index: 999;
     }
-
+    .menuBtn i.active:before{
+        content: "\f00d";
+    }
     .navbar .menu{
         position: fixed;
         height: 100vh;
