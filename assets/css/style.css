@@ -279,6 +279,46 @@ section .title::after{
     background-color: #FBFBFB;
 }
 
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #D5D5D5;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.services .serv-content .card:hover{
+    background: #FFB800;
+}
+
+.services .serv-content .card .box{
+    transition: all .3s ease;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #FFB800;
+    transition: all .3s ease;
+}
+
+.services .serv-content .card:hover i{
+    color: #FBFBFB;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
 /* responsive media querry */
 @media(max-width:1230px){
     .home{
@@ -372,6 +412,11 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:690px){
@@ -390,7 +435,16 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
+
+    .services .serv-content .card{
+        width: calc(50%-10px);
+        margin-bottom: 20px;
+    }
+    .services .serv-content .card{
+        width:100%;
+    }
 }
+
 
 @media(max-width:500px){
     .home .home-content .text-name{
