@@ -157,6 +157,33 @@ body{
     font-weight: 500;
 }
 
+/* AboutUs */
+
+section{
+    padding: 100px 0;
+}
+
+.about{
+    background-color: #1B1B1B;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .titleAbout{
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .about-content .left img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
 /* responsive media querry */
 @media(max-width:1230px){
     .home{
