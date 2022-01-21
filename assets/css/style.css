@@ -157,20 +157,18 @@ body{
     color: #FFB800;
     font-weight: 500;
 }
-
-/* AboutUs */
-
+/* all similar styles */
 section{
     padding: 100px 0;
 }
 
-.about{
+.about, .services{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     color: #FBFBFB;
 }
 
-.about .titleAbout{
+section .title{
     position: relative;
     color: #FBFBFB;
     text-align: center;
@@ -181,17 +179,35 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .titleAbout::after{
-    content: "who I am";
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #FBFBFB;
+    transform: translateX(-50%);
+}
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
     font-size: 20px;
     color: #FFB800;
+    padding: 5px;
+    background: #1B1B1B;
     transform: translateX(-50%);
 }
 
-.about .about-content{
+/* AboutUs */
+
+.about .title::after{
+    content: "who I am";
+}
+
+.about .about-content,
+.services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -244,6 +260,24 @@ section{
     background: none;
 }
 
+/* services section */
+.services{
+    background: #FBFBFB;
+    color: #1B1B1B;
+}
+
+.services .title{
+    color: #1B1B1B;
+}
+
+.services .title::before{
+    background-color: #1B1B1B;
+}
+
+.services .title::after{
+    content: "what i provide";
+    background-color: #FBFBFB;
+}
 
 /* responsive media querry */
 @media(max-width:1230px){
