@@ -162,10 +162,19 @@ section{
     padding: 100px 0;
 }
 
-.about, .services{
+.about, .services, .skills{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     color: #FBFBFB;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 section .title{
@@ -317,6 +326,25 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+/* skills section */
+.skills{
+    background-color: #1B1B1B;
+}
+.skills .title{
+    color: #FBFBFB;
+}
+.skills .title::before{
+    background-color: #FBFBFB;
+}
+
+.skills .title::after{
+    content: "what i know";
+    background-color: #1B1B1B;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
 
 
 /* responsive media querry */
