@@ -162,7 +162,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills, .team,.projects{
+.about, .services, .skills, .team, .projects, .contact{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     color: #FBFBFB;
@@ -535,7 +535,7 @@ section .title::after{
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 6px;
     border: 2px solid #FFB800;
     transition: all .3s ease
@@ -546,6 +546,23 @@ section .title::after{
     background: none;
 }
 
+/* Contact me section */
+.contact{
+    background: #FBFBFB;
+}
+
+.contact .title{
+    color: #1B1B1B;
+}
+
+.contact .title::before{
+    background-color: #1B1B1B;
+}
+
+.contact .title::after{
+    content: "get in touch";
+    background-color: #FBFBFB;
+}
 
 
 /* responsive media querry */
