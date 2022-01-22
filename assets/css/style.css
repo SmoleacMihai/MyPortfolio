@@ -89,6 +89,7 @@ body{
 }
 
 .navbar .menu li a{
+    display: block;
     color:#1B1B1B;
     font-size: 18px;
     font-weight: 600;

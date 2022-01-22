@@ -29,6 +29,14 @@ $(document).ready(function(){
         }
     });
 
+    // animation type
+    var typed = new Typed(".typing", {
+        strings: ["use google", "make you happy", "code", "hug you :3", "think"],
+        typeSpeed: 150,
+        baclSpeed: 120,
+        loop: true
+    })
+
     // owl carousel 
     $('.carousel').owlCarousel({
         margin: 20,
