@@ -162,7 +162,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills, .team, .projects, .contact{
+.about, .services, .skills, .team, .projects, .contact, footer{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     color: #FBFBFB;
@@ -669,6 +669,14 @@ section .title::after{
 .contact .right form .button button:hover{
     color: #FFB800;
     background: none;
+}
+
+/* footer */
+footer{
+    background: #1B1B1B;
+    padding: 20px 23px;
+    color: #FBFBFB;
+    text-align: center;
 }
 
 
