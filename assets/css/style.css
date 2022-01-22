@@ -371,6 +371,40 @@ section .title::after{
     height: 5px;
     width: 100%;
     background-color: grey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #FFB800;
+}
+
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+
+.skills .skills-content .right .css::before{
+    width: 80%;
+}
+
+.skills .skills-content .right .js::before{
+    width: 50%;
+}
+
+.skills .skills-content .right .php::before{
+    width: 0%;
+}
+
+.skills .skills-content .right .mysql::before{
+    width: 0%;
+}
+
+.skills .skills-content .right .py::before{
+    width: 15%;
 }
 
 
