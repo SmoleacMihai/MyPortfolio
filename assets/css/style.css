@@ -162,7 +162,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills, .team{
+.about, .services, .skills, .team,.projects{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     color: #FBFBFB;
@@ -514,6 +514,37 @@ section .title::after{
     background: #FFB800!important;
 }
 
+/* Projects */
+.projects .title::after{
+    content: "what I've done";
+}
+
+.projects .text{
+    font-size: 25px;
+    margin: 40px 0 20px 0;
+}
+
+.projects p{
+    text-align: justify;
+}
+
+.projects a{
+    display: inline-block;
+    background: #FFB800;
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #FFB800;
+    transition: all .3s ease
+}
+
+.projects a:hover{
+    color:#FFB800;
+    background: none;
+}
 
 
 
