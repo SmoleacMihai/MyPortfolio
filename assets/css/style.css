@@ -162,7 +162,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills{
+.about, .services, .skills, .team{
     background-color: #1B1B1B;
     font-family: 'Poppins', sans-serif;
     color: #FBFBFB;
@@ -170,7 +170,8 @@ section{
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content{
+.skills .skills-content,
+.team .team-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -428,6 +429,37 @@ section .title::after{
 
 .skills .skills-content .right .py::before{
     width: 15%;
+}
+
+/* my team */
+.team{
+    background-color: #FBFBFB;
+    color: #1B1B1B;
+}
+
+.team .title{
+    color: #1B1B1B;
+}
+
+.team .title::before{
+    background-color: #1B1B1B;
+}
+
+.team .title::after{
+    content: "my homies";
+    background-color: #FBFBFB;
+}
+
+.team .carousel .card{
+
+}
+
+.team .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFB800;
 }
 
 
