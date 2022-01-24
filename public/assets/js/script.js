@@ -31,9 +31,16 @@ $(document).ready(function(){
 
     // animation type
     var typed = new Typed(".typing", {
-        strings: ["use google", "make you happy", "code", "hug you :3", "think"],
+        strings: ["use google.", "make you happy.", "code.", "hug you :3", "think."],
         typeSpeed: 150,
-        baclSpeed: 120,
+        backSpeed: 80,
+        loop: true
+    });
+
+    let type = new Typed(".whoIAm", {
+        strings: ["Student", "Programer", "Pro gamer", "Human", ],
+        typeSpeed: 150,
+        backSpeed: 80,
         loop: true
     })
 
