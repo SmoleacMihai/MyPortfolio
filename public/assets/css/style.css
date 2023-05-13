@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+a {
+  color:#1B1B1B;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -452,15 +456,15 @@ section .title::after{
 }
 
 .skills .skills-content .right .php::before{
-    width: 0%;
+    width: 15%;
 }
 
 .skills .skills-content .right .mysql::before{
-    width: 0%;
+    width: 50%;
 }
 
 .skills .skills-content .right .py::before{
-    width: 15%;
+    width: 65%;
 }
 
 /* my team */
